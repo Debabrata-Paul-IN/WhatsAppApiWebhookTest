@@ -34,6 +34,11 @@ app.get("/webhook", (req, res) => {
   }
 });
 
+app.get('/',(req,res)=>{
+  res.send("Server Connected...")
+
+})
+
 app.post("/webhook", (req, res) => {
   let bodyParam = req.body;
   console.log(JSON.stringify(bodyParam, null, 2));
