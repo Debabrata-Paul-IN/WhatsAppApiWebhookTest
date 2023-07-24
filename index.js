@@ -12,7 +12,7 @@ const mytoken = process.env.MY_TOKEN;
 //use bodyparser middlewere to get the data in JSON format
 app.use(bodyParser.json());
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 // Runing server at defined port
 app.listen(PORT, () => {
